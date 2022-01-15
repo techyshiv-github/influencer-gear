@@ -180,11 +180,37 @@ align-items: center;
 
 footer{
     margin-top: 50px;
-    height: 50px;
-    display: flex;
+    height: 200px;
+    color:#fff;
+    display: grid;
+    grid-template-columns: repeat(1,1fx);
+    grid-row-gap: 10px;
     justify-content: center;
     align-items: center;
+    background-color:#0A0826;
 }
+.footer-info
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-icon
+{
+    width: 32px;
+    height: 32px;
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   column-gap: 10px;
+
+}
+.icons-arrange
+{
+    text-align: center;
+    margin-left: 120px;
+    margin-top: -60px;
+}
+
 
 
 /* navbar */
