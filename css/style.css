@@ -226,12 +226,14 @@ footer{
 /* responsive css */
 
 @media (max-width:950px){
-    .gallery{
+    .gallery-gridview{
         grid-template-columns: 1fr 1fr;
     }
     .banner-left h1{
         font-size: 35px;
     }
+  
+
 }
 
 @media (max-width:800px){
@@ -239,8 +241,15 @@ footer{
         grid-template-columns: 1fr;
         height: fit-content;
     }
-    .feature,
-    .gallery,
+    hr{
+        display: none;
+
+    }
+    .company-logos{
+        display: none;
+    }
+    
+    .gallery-gridview,
     .contact{
         grid-template-columns: 1fr;
     }
@@ -265,13 +274,14 @@ footer{
         width: 100%;
         flex-direction: column;
         align-items: center;
-        background-color: #fff;
+        background-color: rgb(255, 255, 255);
+        color:rgb(0, 0, 0);
         padding: 20px 0;
         transform: translateY(-330px);
         transition: .5s ease-in-out;
     }
     .navigation li a{
-        color: #121212;
+        color: #000000;
     }
     #nav-toggler:checked ~ .navigation{
         transform: translateY(0px);
